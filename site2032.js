@@ -1275,7 +1275,7 @@ daftarSitus2032 = [
 'bitner.com.pl',
 'efflorescocreations.com',
 'online-red.ru',
-'fine.edu.np',
+
 'kcokatir.info',
 'gilsaer-landcafe.de',
 'smartbusinessadvisors.com.au',
