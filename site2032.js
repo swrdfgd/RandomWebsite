@@ -1198,7 +1198,7 @@ daftarSitus2032 = [
 'sophiacollegemumbai.com',
 'jpfnepal.org',
 'kbilmonmye.info',
-'forbescollege.edu.np',
+'fine.edu.np',
 'slivechennai.in',
 'rimeaza.ro',
 'kamalbazardainik.com',
