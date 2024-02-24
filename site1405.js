@@ -2220,7 +2220,7 @@ daftarSitus1405 = [
 'pureoutside.com',
 'marihaha.com',
 'mommybknowsbest.com',
-'rongeorgejewelers.com',
+
 'ratatu.com',
 'reentryinitiative.org',
 'pdsvista.com',
