@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<head>
+<title>Random Website List</title>
+<script src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/audiosynth.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+</head>
+
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #a4cedf;
+  text-shadow: 0 0 4px black;
+  border: 2px solid #fff;
+  border-radius: 1.5em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learn-more::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #a4cedf;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #eef5f8, 0 0.625em 0 0 #b9ccd3;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learn-more:hover {
+  background: #ae341a;
+  transform: translate(0, 0.25em);
+}
+button.learn-more:hover::before {
+  box-shadow: 0 0 0 2px #eef5f8, 0 0.5em 0 0 #b9ccd3;
+  transform: translate3d(0, 0.5em, -1em);
+}
+button.learn-more:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+button.learn-more:active::before {
+  box-shadow: 0 0 0 2px #eef5f8, 0 0 #b9ccd3;
+  transform: translate3d(0, 0, -1em);
+}
+
+/*clouds by Oscar Bustos https://codepen.io/elchiconube/pen/naxOWv */
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	
+}
+
+#clouds{
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 10%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 10%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 10%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: absolute; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+</style>
+
+<body>
+
+<!--
+So we will have an animated background with 5 clouds moving across the screen.
+Steps: 
+1. create the clouds
+2. Animate them to move across the screen
+3. Stylize the clouds(can be done as step #2 also)
+-->
+<div id="clouds">
+	<div class="cloud x1"></div>
+	<!-- Time for multiple clouds to dance around -->
+	<div class="cloud x2"></div>
+	<div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+
+<!-- Thats the markup! -->
+<!-- That looks cool. We are done!! -->
+
+<div id="content-wrapper">
+<script>
+emoji = ['~'];
+document.write('<scr' + 'ipt src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/emojiranweb.js"></scr' + 'ipt>');
+
+</script>
+
+<script>
+suara = 0;
+document.onkeyup = function(e) {
+  if (e.which == 69) {
+    buatLingkaran();
+  } 
+  if (e.which == 83) {
+    suara = 1 - suara;
+  } 
+};
+</script>
+
+
+<script>
+//fungsi warna random------------------------------------------------------------------------------
+function getRandomColor() {
+  var lettersz = '0123456789abcdef';
+  var colorz = '#';
+  for (var i = 0; i < 6; i++) {
+    colorz += lettersz[Math.floor(Math.random() * 16)];
+  }
+  return colorz;
+}
+//------------------------------------------------------------------------------------------------
+</script>
+
+<script>
+ kunciNada = ['C','C#','D','D#','E','F#','G','G#','A','A#','B'];
+ daftarSitus = [];
+ piu = 0;
+ banyakDaftar = 2781;
+ banyakDaftar2 = 900;
+ banyakCurated = 14;
+ for (let i = 1; i < banyakDaftar+1; i++){
+   if (Math.random() < 1/i){
+    document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/site'+i+'.js\"></scr' + 'ipt>')
+    piu++;
+   }
+ }
+ for (let i = 1; i < banyakDaftar2+1; i++){
+   if (Math.random() < 1/i){
+    document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/site'+i+'a.js\"></scr' + 'ipt>')
+    piu++;
+   }
+ }
+ for (let i = 1; i < banyakCurated+1; i++){
+   if (Math.random() < 1/2){
+    document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/curated'+i+'.js\"></scr' + 'ipt>')
+    piu++;
+   }
+ }
+</script>
+
+<div style="font-size: 7rem; text-align: center;">
+<div id="quote">Welcome</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+const API_KEY = 'AIzaSyBTPAz_OQr140D1rtD0o6vwM63XohXw8Ds';
+let fontsList = [];
+const el = document.querySelector("#quote");
+async function loadFontsList() {
+    try {
+        const result = await fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=' + API_KEY);
+        const data = await result.json();
+        console.log('loaded google fonts list: ', data.items.length);
+        return data.items;
+    } catch (error) {
+        console.log('loadFontsList', error, error.message);
+    }
+}
+function loadRandomFont(fontsList) {
+    const randomIndex = Math.floor(Math.random() * fontsList.length);
+    const choosedFont = fontsList[randomIndex].family;
+    WebFont.load({
+        google: {
+            families: [choosedFont]
+        }
+    });
+    console.log('choosed font: ', choosedFont);
+    return choosedFont;
+}
+function updateFont(el, choosedFont) {
+    el = document.querySelector("#quote");
+    el.style.fontFamily = choosedFont;
+    el.setAttribute('title', choosedFont);
+}
+async function main() {
+    fontsList = await loadFontsList();
+    const choosedFont = loadRandomFont(fontsList);
+    updateFont(el, choosedFont);
+    el.style.visibility = "visible";
+}
+main();
+</script>
+
+<script>
+ document.write('<div style="float: left;">');
+ document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" id="linkrandomside" onclick="gantilinks();"><button class="learn-more" style="background: '+getRandomColor()+';">Suprise Me!</button></' + 'a><br>');
+ document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://swrdfgd.github.io/KiankoLand\"><button class="learn-more" style="background: '+getRandomColor()+';">Kianko Land</button></' + 'a><br>');
+  document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://swrdfgd.github.io/RandomYoutube\"><button class="learn-more" style="background: '+getRandomColor()+';">Random Youtube Video</button></' + 'a><br>');
+ for (let i = 0; i < 100; i++){
+  pilihanSitus = daftarSitus[Math.floor(Math.random()*daftarSitus.length)];
+  if (Array.isArray(pilihanSitus)){
+	document.write('<div style="display: flex; justify-content: flex-end;"><a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"' + pilihanSitus[0] + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus[1] + '</button></' + 'a></div>');
+  }
+  else{
+  document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://' + pilihanSitus + '\"><button class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus + '</button></' + 'a><br>');
+  }
+ }
+ document.write('</div>');
+</script>
+
+<script>
+ document.write('<div style="float: right;">');
+ for (let i = 0; i < 100; i++){
+  pilihanSitus = daftarSitus[Math.floor(Math.random()*daftarSitus.length)];
+  if (Array.isArray(pilihanSitus)){
+	document.write('<div style="display: flex; justify-content: flex-end;"><a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"' + pilihanSitus[0] + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus[1] + '</button></' + 'a></div>');
+  }
+  else{
+  document.write('<div style="display: flex; justify-content: flex-end;"><a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://' + pilihanSitus + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus + '</button></' + 'a></div>');
+  }
+ }
+ document.write('</div>');
+</script>
+
+
+</div>
+
+<iframe data-aa='2159314' src='https://ad.a-ads.com/2159314?size=970x250' style='width:970px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+
+<div>
+
+	<style type='text/css'>
+
+
+	#random-posts {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	#random-posts li {
+	  padding: 0 0 5px 0;
+	  font-size: 90%;
+	  margin: 5px 0;
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	#random-posts li a {
+	  color: #333;
+	}
+
+	</style>
+	<ul id="random-posts"></ul>
+	<script type='text/javascript'>
+	//<![CDATA[
+	var daftarhomePage = ["https://www.zonaemergente.com/","https://ilovemynewwaterbottle.blogspot.com/","https://na1pohlyad.blogspot.com/","https://puntorockypunto.blogspot.com/","https://sjlnechnaia.blogspot.com/","https://thatsmewhenimbored.blogspot.com/","solosomosbalasperdidas.blogspot.com",];
+	var homePage = daftarhomePage[Math.floor(Math.random()*daftarhomePage.length)];
+	numPosts = 1;
+	function randomPosts(a){if(document.getElementById("random-posts")){var e=shuffleArray(a.feed.entry),title,link,img,content="",ct=document.getElementById("random-posts");for(var i=0;i<numPosts;i++){for(var j=0;j<e[i].link.length;j++){if(e[i].link[j].rel=="alternate"){link=e[i].link[j].href;break}}var title=e[i].title.$t;console.log(e);content+='<strong><li class="random-posts"><a href="'+link+'" title="'+title+'" target="_blank">'+title+'</a></li></strong>'}ct.innerHTML=content}}function shuffleArray(arr){var i=arr.length,j,temp;if(i===0)return false;while(--i){j=Math.floor(Math.random()*(i+1));temp=arr[i];arr[i]=arr[j];arr[j]=temp}return arr}var random_post=document.createElement('script');random_post.src=homePage+'/feeds/posts/summary?alt=json-in-script&orderby=published&max-results=999&callback=randomPosts';document.getElementsByTagName('head')[0].appendChild(random_post);
+	//]]>
+	</script>
+	
+	<script>
+  
+	function gantilinks(){
+
+	  var linkk = ''
+	  
+	  while ((((linkk == '' || linkk == '#') || linkk == 'javascript:void(0)') || linkk.split("/").join(".").split(".")[3] == "blogger") || linkk.split("/").join(".").split(".")[1] == "blogger"){
+		 linkk = document.getElementsByTagName("a")[Math.floor(Math.random()*document.getElementsByTagName("a").length)].href;
+	  }
+	  
+	  document.getElementById("linkrandomside").setAttribute("href", linkk);
+	  
+	}
+	  
+	gantilinks();
+	</script>
+
+</div>
+</div>
+
+</body>
+</html>
