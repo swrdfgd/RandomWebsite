@@ -497,6 +497,7 @@ daftarCurated15 = [
 "bioacoustics.stackexchange.com",
 "solana.stackexchange.com",
 "langdev.stackexchange.com",
-"genai.stackexchange.com"
+"genai.stackexchange.com",
+["https://www.androidsage.com/page/"+Math.ceil(Math.random()*194),"androidsage.com"],
 ];
 daftarSitus = daftarSitus.concat(daftarCurated15);
