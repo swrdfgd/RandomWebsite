@@ -4,6 +4,16 @@
 <title>Random Website List</title>
 <script src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/audiosynth.js"></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+<script src="https://swrdfgd.github.io/RandomWords/characterInFont.js"></script>
+ <script>
+ // kataSemuaBahasa
+ kata = [];
+ document.write('<scr' + 'ipt src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWords/kata/output_'+Math.ceil(Math.random()*424)+'.js"></scr' + 'ipt>');
+ while(Math.random() < 1/2){
+	 document.write('<scr' + 'ipt src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWords/kata/output_'+Math.ceil(Math.random()*424)+'.js"></scr' + 'ipt>');
+ }
+ </script>
+ <script src="wordGen.js"></script>
 </head>
 
 <style>
@@ -269,7 +279,7 @@ function getRandomColor() {
  piu = 0;
  banyakDaftar = 2781;
  banyakDaftar2 = 900;
- banyakCurated = 15;
+ banyakCurated = 16;
  for (let i = 1; i < banyakDaftar+1; i++){
    if (Math.random() < 1/i){
     document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/site'+i+'.js\"></scr' + 'ipt>')
@@ -282,12 +292,13 @@ function getRandomColor() {
     piu++;
    }
  }
- for (let i = 1; i < banyakCurated+1; i++){
-   if (Math.random() < 1/2){
-    document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/curated'+i+'.js\"></scr' + 'ipt>')
+ //for (let i = 1; i < banyakCurated+1; i++){
+   while (Math.random() < 1/2){
+    document.write('<scr' + 'ipt src=\"https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/curated'+Math.ceil(Math.random()*banyakCurated)+'.js\"></scr' + 'ipt>');
     piu++;
-   }
- }
+	}
+  //}
+ 
 </script>
 
 <div style="font-size: 7rem; text-align: center;">
@@ -343,7 +354,7 @@ main();
  for (let i = 0; i < 100; i++){
   pilihanSitus = daftarSitus[Math.floor(Math.random()*daftarSitus.length)];
   if (Array.isArray(pilihanSitus)){
-	document.write('<div style="display: flex; justify-content: flex-end;"><a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"' + pilihanSitus[0] + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus[1] + '</button></' + 'a></div>');
+	document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"' + pilihanSitus[0] + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus[1] + '</button></' + 'a><br>');
   }
   else{
   document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://' + pilihanSitus + '\"><button class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus + '</button></' + 'a><br>');
