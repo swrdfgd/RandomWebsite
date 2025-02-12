@@ -5,6 +5,12 @@
 <script src="https://cdn.jsdelivr.net/gh/swrdfgd/RandomWebsite/audiosynth.js"></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
 <script src="https://swrdfgd.github.io/RandomWords/characterInFont.js"></script>
+<script>
+namaNama = []
+namaNamaBanyak = 1;
+pilihanNama = Math.ceil(Math.random()*namaNamaBanyak)
+document.write('<scr' + 'ipt src="https://swrdfgd.github.io/LearnTyping/UniqueTests/Names/names'+pilihanNama+'.js"></scr' + 'ipt>')
+</script>
 <script src="englishword.js"></script>
  <script>
  // kataSemuaBahasa
@@ -283,7 +289,12 @@ function getRandomColor() {
  while (Math.random()<1/2){
 	situsRandom = kataEnglish[Math.floor(Math.random()*kataEnglish.length)];
 	while (Math.random()< 1/2){
+		if (Math.random() < 1/10){
+		situsRandom += Array.from({length: 1 + Math.floor(Math.log2(1/Math.random()))}, () => String.fromCharCode(97 + Math.floor(Math.random() * 26))).join('');
+		}
+		else{
 		situsRandom += kataEnglish[Math.floor(Math.random()*kataEnglish.length)];
+		}
 	}
 	if (Math.random() > 1/daftarTLD.length){
 		situsRandom += '.' + daftarTLD[Math.floor(Math.random()*daftarTLD.length)];
