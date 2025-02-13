@@ -293,7 +293,10 @@ function getRandomColor() {
 		situsRandom += Array.from({length: 1 + Math.floor(Math.log2(1/Math.random()))}, () => String.fromCharCode(97 + Math.floor(Math.random() * 26))).join('');
 		}
 		else{
-		situsRandom += kataEnglish[Math.floor(Math.random()*kataEnglish.length)];
+			if (Math.random() < 1/10){
+				situsRandom += '-'
+			}
+			situsRandom += kataEnglish[Math.floor(Math.random()*kataEnglish.length)];
 		}
 	}
 	if (Math.random() > 1/daftarTLD.length){

@@ -56,9 +56,9 @@ daftarCurated1 = [
 ];
 
 function getRandomDate(start, end) {
-    const startDate = new Date(start);
-    const endDate = new Date(end);
-    const randomTime = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
+    const startDate1 = new Date(start);
+    const endDate1 = new Date(end);
+    const randomTime = new Date(startDate1.getTime() + Math.random() * (endDate1.getTime() - startDate1.getTime()));
     
     const year = randomTime.getFullYear();
     const month = ('0' + (randomTime.getMonth() + 1)).slice(-2); // Add leading zero and ensure month is 2 digits
