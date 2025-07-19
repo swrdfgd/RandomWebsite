@@ -473,9 +473,11 @@ main();
 	</script>
 	
 	<script>
-  
+    let gantilink = false
 	function gantilinks(){
-
+	  if (Math.random() < 1/10 && gantilink){location.reload(); return}
+	  gantilink = true;
+	  
 	  var linkk = ''
 	  
 	  while ((((linkk == '' || linkk == '#') || linkk == 'javascript:void(0)') || linkk.split("/").join(".").split(".")[3] == "blogger") || linkk.split("/").join(".").split(".")[1] == "blogger"){
