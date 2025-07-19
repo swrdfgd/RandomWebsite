@@ -284,6 +284,9 @@ function getRandomColor() {
  kunciNada = ['C','C#','D','D#','E','F#','G','G#','A','A#','B'];
  daftarSitus = [];
  daftarTLD = ["net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "net", "io", "io", "io", "io", "io", "io", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "com", "co", "buzz", "ua", "ua", "uno", "xyz", "xyz", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "org", "tz", "ru", "ru", "ru", "ru", "autos", "fr", "fr", "gov", "gov", "dk", "dk", "dk", "de", "de", "de", "de", "de", "de", "de", "ca", "cz", "cz", "ch", "au", "au", "hu", "hu", "cn", "tr", "pl", "ir", "ir", "lol", "lol", "in", "in", "me", "vn", "ro", "it", "it", "es", "es", "link", "vip", "zm", "zm", "ai", "jp", "jp", "hk", "us", "us", "th", "uk", "br", "edu", "at", "at", "space", "tw", "eu", "cloud", "express", "cc", "pro", "pro", "no", "eg" ];
+ const ccTlds = ["ac","ad","ae","af","ag","ai","al","am","ao","aq","ar","as","at","au","aw","ax","az","ba","bb","bd","be","bf","bg","bh","bi","bj","bl","bm","bn","bo","bq","br","bs","bt","bv","bw","by","bz","ca","cc","cd","cf","cg","ch","ci","ck","cl","cm","cn","co","cr","cu","cv","cw","cx","cy","cz","de","dj","dk","dm","do","dz","ec","ee","eg","eh","er","es","et","eu","fi","fj","fk","fm","fo","fr","ga","gb","gd","ge","gf","gg","gh","gi","gl","gm","gn","gp","gq","gr","gs","gt","gu","gw","gy","hk","hm","hn","hr","ht","hu","id","ie","il","im","in","io","iq","ir","is","it","je","jm","jo","jp","ke","kg","kh","ki","km","kn","kp","kr","kw","ky","kz","la","lb","lc","li","lk","lr","ls","lt","lu","lv","ly","ma","mc","md","me","mf","mg","mh","mk","ml","mm","mn","mo","mp","mq","mr","ms","mt","mu","mv","mw","mx","my","mz","na","nc","ne","nf","ng","ni","nl","no","np","nr","nu","nz","om","pa","pe","pf","pg","ph","pk","pl","pm","pn","pr","ps","pt","pw","py","qa","re","ro","rs","ru","rw","sa","sb","sc","sd","se","sg","sh","si","sj","sk","sl","sm","sn","so","sr","ss","st","sv","sx","sy","sz","tc","td","tf","tg","th","tj","tk","tl","tm","tn","to","tr","tt","tv","tz","ua","ug","uk","um","us","uy","uz","va","vc","ve","vg","vi","vn","vu","wf","ws","ye","yt","za","zm","zw","xn--mgbaam7a8h","xn--mgbayh7gpa","xn--mgbc0a9azcg","xn--mgberp4a5d4ar","xn--mgbx4cd0ab","xn--mgb9awbf","xn--mgba3a4f16a","xn--mgbai9azgqp6j","xn--ygbi2ammx","xn--mgbtf8fl","xn--mgbt3dhd","xn--pgbs0dh","xn--wgbl6a","xn--wgbh1c","xn--mgbbh1a71e","xn--mgbqly7c0a67fbc","xn--3e0b707e","xn--d1alf","xn--l1acc","xn--h2brj9c","xn--h2breg3eve","xn--rvc1e0am3e","xn--45brj9c","xn--s9brj9c","xn--xkc2dl3a5ee0h","xn--xkc2al3hye2a","xn--clchc0ea0b2g2a9gcd","xn--fpcrj9c3d","xn--gecrj9c","xn--45br5cyl","xn--90a3ac","xn--90ae","xn--fiqs8s","xn--fiqz9s","xn--j6w193g","xn--kprw13d","xn--kpry57d","xn--g6w251d","xn--zfr164b","xn--efvy88h","xn--vuq861b","xn--55qx5d","xn--flw351e","xn--hxt814e","xn--lgbbat1ad8j"];
+ belakangDomain = 0;
+ 
  
  //tambahwebrandom
  while (Math.random()<1/2){
@@ -299,12 +302,28 @@ function getRandomColor() {
 			situsRandom += kataEnglish[Math.floor(Math.random()*kataEnglish.length)];
 		}
 	}
-	if (Math.random() > 1/daftarTLD.length){
-		situsRandom += '.' + daftarTLD[Math.floor(Math.random()*daftarTLD.length)];
+	
+	tambahBelakangDomain = true
+	belakangDomain = 0
+	
+	while (tambahBelakangDomain){
+		if (Math.random() > 1/daftarTLD.length){
+			if (Math.random() < (belakangDomain+1)/daftarTLD.length){
+				situsRandom += '.' + ccTlds[Math.floor(Math.random()*ccTlds.length)];
+			}
+			else{
+				situsRandom += '.' + daftarTLD[Math.floor(Math.random()*daftarTLD.length)];
+			}
+		}
+		else{
+			situsRandom += '.' + Array.from({length: 1 + Math.floor(Math.log2(1/Math.random()))}, () => String.fromCharCode(97 + Math.floor(Math.random() * 26))).join('');
+		}
+		tambahBelakangDomain = false;
+		belakangDomain++;
+		if (Math.random() < 1/(daftarTLD.length*belakangDomain)){tambahBelakangDomain = true}
+		
 	}
-	else{
-		situsRandom += '.' + Array.from({length: 1 + Math.floor(Math.log2(1/Math.random()))}, () => String.fromCharCode(97 + Math.floor(Math.random() * 26))).join('');
-	}
+	
 	daftarSitus.push(situsRandom);
  }
  piu = 0;
@@ -384,6 +403,13 @@ main();
   document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"https://swrdfgd.github.io/PunkRecords\"><button class="learn-more" style="background: '+getRandomColor()+';">Punk Records</button></' + 'a><br>');
  for (let i = 0; i < 100; i++){
   pilihanSitus = daftarSitus[Math.floor(Math.random()*daftarSitus.length)];
+  if (i==0 && belakangDomain > 0){pilihanSitus = daftarSitus[0];}
+  else if (i==0){
+	  let half = 1;
+	  while (Math.random()<1/2){half++}
+	  half = Math.floor(Math.random()*daftarSitus.length/half);
+	  pilihanSitus = daftarSitus[ Math.floor(Math.random()*half)]
+  }
   if (Array.isArray(pilihanSitus)){
 	document.write('<a' + ' onmouseover="if(suara){Synth.play(\'piano\',\''+kunciNada[Math.floor(Math.random()*kunciNada.length)]+'\', '+ Math.ceil(Math.random()*6) +', 1)};" target="_blank" href=\"' + pilihanSitus[0] + '\"><button style="background: '+getRandomColor()+';" class="learn-more" style="background: '+getRandomColor()+';">' + pilihanSitus[1] + '</button></' + 'a><br>');
   }
