@@ -56,6 +56,6 @@ const dafontLetter = [
 let chosenDafont = dafontLetter[Math.floor(Math.random()*dafontLetter.length)];
 angkaDafont = chosenDafont[1]
 while (Math.random()<1/2){angkaDafont++}
-daftarCurated10.push('https://www.dafont.com/alpha.php?lettre='+chosenDafont[0]+'&page='+(1+Math.floor(Math.random()*angkaDafont)));
+daftarCurated10.push(['https://www.dafont.com/alpha.php?lettre='+chosenDafont[0]+'&page='+(1+Math.floor(Math.random()*angkaDafont)),'Dafont']);
 
 daftarSitus = daftarSitus.concat(daftarCurated10);
