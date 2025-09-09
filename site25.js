@@ -1456,7 +1456,7 @@ daftarSitus25 = [
 'primaryarms.com',
 'umcutrecht.nl',
 'concept2.com',
-'abilify2021.monster',
+
 'thesiswritinghelpsrv.com',
 'startaid.com',
 'safebrowsing.apple',
@@ -2238,3 +2238,4 @@ daftarSitus25 = [
 'ichannels.com.tw',
 ];
 daftarSitus = daftarSitus.concat(daftarSitus25);
+
