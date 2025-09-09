@@ -374,7 +374,7 @@ daftarSitus685a = [
 "otvet.work",
 "etvr.ru",
 "prepe.co.kr",
-"abilify2021.monster",
+
 "daohuofukuan.com",
 "lammonia.biz",
 "ntp.org.uk",
