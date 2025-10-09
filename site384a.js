@@ -1,4 +1,5 @@
 daftarSitus384a = [
+"borneopartisi.com",
 "foodiesfestival.com",
 "okgoals.com",
 "greentimes.com",
