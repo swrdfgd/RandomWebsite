@@ -1,4 +1,5 @@
 daftarSitus1406 = [
+'plants.usda.gov',
 'haitrieuauto.com',
 'portcitymoped.com',
 'thewildrosebeauty.com',
@@ -2238,3 +2239,4 @@ daftarSitus1406 = [
 'adultdoorways.com',
 ];
 daftarSitus = daftarSitus.concat(daftarSitus1406);
+
