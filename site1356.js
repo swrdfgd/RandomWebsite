@@ -1,4 +1,5 @@
 daftarSitus1356 = [
+'watch.plex.tv',
 'divizion.org',
 'quattranviet.vn',
 'grandplazamunnar.com',
@@ -2238,3 +2239,4 @@ daftarSitus1356 = [
 'bristolbay.com',
 ];
 daftarSitus = daftarSitus.concat(daftarSitus1356);
+
