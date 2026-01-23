@@ -1,4 +1,5 @@
 daftarSitus2 = [
+'a-sanusi.github.io',
 'nuranimahasiswamerdeka.blogspot.com',
 'fabifuu.wordpress.com',
 'imperial.ac.uk',
@@ -2240,5 +2241,6 @@ daftarSitus2 = [
 '9news.com.au',
 ];
 daftarSitus = daftarSitus.concat(daftarSitus2);
+
 
 
