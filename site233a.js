@@ -1,4 +1,6 @@
 daftarSitus233a = [
+"stasel-r.github.io",
+"haikal-isa.github.io",
 "emissary.ai",
 "encore.org",
 "sofasandsectionals.com",
