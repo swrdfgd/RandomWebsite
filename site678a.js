@@ -1,4 +1,5 @@
 daftarSitus678a = [
+"cynthiasuelarson.wordpress.com",
 "club-vulkandeluxe.com",
 "novarostudio.com",
 "daliangaoke.com",
