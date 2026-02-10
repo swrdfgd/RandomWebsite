@@ -1,4 +1,5 @@
 daftarSitus1263 = [
+'stevemorseofficial.com',
 'miplanconhijos.com',
 'bridgespointboatcompany.com',
 'hartevw.com',
@@ -2238,3 +2239,4 @@ daftarSitus1263 = [
 'previsl.com',
 ];
 daftarSitus = daftarSitus.concat(daftarSitus1263);
+
