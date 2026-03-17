@@ -1353,7 +1353,7 @@ daftarSitus109a = [
 "searchgoose.com",
 "ltu.edu.tw",
 "sovetonk.ru",
-"soatmundial.com.co",
+
 "live-servers.net",
 "asnet.jp",
 "pcerrorsfixer.com",
