@@ -1493,7 +1493,7 @@ daftarSitus174a = [
 "pathe.tn",
 "programasparaelbienestar.gob.mx",
 "pubtok.com",
-"segurosmundial.com.co",
+
 "shiptrack.co.kr",
 "taskia.es",
 "temonibus.com",
