@@ -932,7 +932,7 @@ daftarSitus588 = [
 'whaletimes.org',
 'pptclass.ir',
 'alfats.ir',
-'segurosmundial.com.co',
+
 'lifesmoving.co.th',
 'powerdance.kr',
 'salonduvintage.com',
