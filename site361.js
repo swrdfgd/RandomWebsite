@@ -118,7 +118,7 @@ daftarSitus361 = [
 'tokyooperacity.co.jp',
 'ekipara.com',
 'torinofilmlab.it',
-'soatmundial.com.co',
+
 'cyfron.ru',
 'wizecommerce.in',
 'pointclickbuild.com',
