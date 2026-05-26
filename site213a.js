@@ -1,4 +1,5 @@
 daftarSitus213a = [
+"arc.aiaa.org",
 "3bees.com",
 "qx-market.com",
 "keihanhotels-resorts.co.jp",
