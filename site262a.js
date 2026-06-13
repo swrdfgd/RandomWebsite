@@ -1,4 +1,5 @@
 daftarSitus262a = [
+"repository.mediapenerbitindonesia.com",
 "kernowcraft.com",
 "replicauhren.to",
 "pcbtjq.com",
