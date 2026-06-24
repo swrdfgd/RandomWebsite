@@ -1337,7 +1337,7 @@ daftarSitus2042 = [
 'coloradogem.com',
 'pascal-tic.org',
 'wtkfederation.org',
-'practicsbs.com',
+
 'kokuyocamlin-ihr.com',
 'unicorninfo.com',
 'pathwellness.com',
