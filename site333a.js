@@ -1,4 +1,5 @@
 daftarSitus333a = [
+["https://boardgamegeek.com/thread/"+Math.ceil(Math.random()*3088040),"BoardGameGeek"],
 "nexofin.com",
 "djikic.com",
 "nextbiography.com",
