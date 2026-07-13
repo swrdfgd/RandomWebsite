@@ -837,7 +837,7 @@ daftarSitus193a = [
 "bgxcdn.com",
 "vulkan-bet.space",
 "gg84.bet",
-"tower-bersama.com",
+
 "pharaon333.xyz",
 "esjday.com",
 "casinovulcan.ltd",
