@@ -1,4 +1,5 @@
 daftarSitus904 = [
+'jonnylee.net',
 'designextreme.com',
 'dheepur.ml',
 'crochetstores.mx',
