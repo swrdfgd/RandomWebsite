@@ -968,7 +968,7 @@ daftarSitus345 = [
 'bbah.de',
 'darcwoods.com',
 'jonathanmh.com',
-'novaquest.com.br',
+
 'bbkf.de',
 'bbfd.de',
 'bbhp.de',
