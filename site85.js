@@ -1,4 +1,5 @@
 daftarSitus85 = [
+'radufromfinland.com',
 'xn--80aehabsbdmigo4bh0th.xn--p1ai',
 'runbook.it',
 'mindmingles.com',
