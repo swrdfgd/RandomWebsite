@@ -217,7 +217,7 @@ daftarSitus819a = [
 "pingup.net",
 "piracy.lol",
 "placement123-ing.co.uk",
-"plataformaamais.com",
+
 "pleinderreduc.com",
 "plugboleto.com.br",
 "plugntrade.com.br",
