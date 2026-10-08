@@ -1562,7 +1562,7 @@ daftarSitus94a = [
 "pressurecookrecipes.com",
 "feelingsurf.fr",
 "icc-cloud.jp",
-"unimestre.com",
+
 "blocktrail.com",
 "kremlinrus.ru",
 "ajpes.si",
