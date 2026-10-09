@@ -1,4 +1,5 @@
 daftarSitus1049 = [
+'gamsnet.net',
 'ehplindia.org',
 'irelevonous.name',
 'sijiyoumei.com',
