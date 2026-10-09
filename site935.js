@@ -1,4 +1,5 @@
 daftarSitus935 = [
+'vimjot.com',
 'englishgood.ru',
 'cvalley.net',
 'short786insectrest.live',
