@@ -1,4 +1,5 @@
 daftarSitus482a = [
+"area51.stackexchange.com",
 "korekarashinro.jp",
 "korektortekstu.pl",
 "korendy.com.tr",
