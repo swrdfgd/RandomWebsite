@@ -1,4 +1,5 @@
 daftarSitus881a = [
+"iscaliforniaonfire.com",
 "style.me",
 "segfault.blog",
 "topgradeinc.com",
