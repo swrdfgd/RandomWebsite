@@ -1,4 +1,5 @@
 daftarSitus530a = [
+"arethebritsatitagain.org",
 "niidkfimr.ru",
 "news-beneci.cc",
 "rtvahta.ru",
