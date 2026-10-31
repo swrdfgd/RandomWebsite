@@ -1,4 +1,5 @@
 daftarSitus737a = [
+"dearnextvisitor.com',
 "ensuredtechnology.com",
 "dragonadopters.com",
 "free-prizes.org",
