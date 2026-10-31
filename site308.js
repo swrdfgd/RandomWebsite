@@ -1,4 +1,5 @@
 daftarSitus308 = [
+'gabyespino.com',
 'clintonhonda.com',
 'backfreespeech.com',
 'fastdowngames.com',
