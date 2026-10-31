@@ -1,4 +1,5 @@
 daftarSitus378a = [
+"whalefollowmouse.com",
 "discoverknowledz.com",
 "dopule.fr",
 "doris.mobi",
