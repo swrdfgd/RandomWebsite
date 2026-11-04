@@ -1,4 +1,5 @@
 daftarSitus979 = [
+'es.shein.com',
 'pairs-support.com',
 'teledirect.com.sg',
 'sertica.com',
