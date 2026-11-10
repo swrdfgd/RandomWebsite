@@ -1,4 +1,5 @@
 daftarSitus1778 = [
+'studyplan.dev',
 'kalyrawinery.com',
 'systemisches-zentrum.de',
 'victorysucumbia.com',
