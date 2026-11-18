@@ -1,4 +1,5 @@
 daftarSitus2020 = [
+'desopipe.com',
 'slotmachinebonus.uk',
 'ffsreunion.fr',
 'riadsalamfes.com',
