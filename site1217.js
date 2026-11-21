@@ -1,4 +1,5 @@
 daftarSitus1217 = [
+'mddsfoundation.org',
 'winstoncooks.com',
 'goseadawgs.com',
 'coolguysurplus.com',
