@@ -1,4 +1,5 @@
 daftarSitus747a = [
+"intisari.grid.id",
 "jsplc.net",
 "xpicw.top",
 "wildlifeact.com",
