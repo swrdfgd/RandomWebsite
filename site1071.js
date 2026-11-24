@@ -1,4 +1,5 @@
 daftarSitus1071 = [
+'artsandculture.google.com',
 'dl2f.com',
 'thegioiphukien24h.com',
 'gew-hessen.de',
